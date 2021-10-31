@@ -4,7 +4,7 @@ const ManageServices = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://ghastly-ghost-15172.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])
@@ -12,7 +12,7 @@ const ManageServices = () => {
     const deleteService = (id) =>{
         // const yes = window.confirm("Delete??");
         if(true){
-            axios.delete(`http://localhost:5000/services/${id}`)
+            axios.delete(`https://ghastly-ghost-15172.herokuapp.com/services/${id}`)
             .then(res => {
                 if(res.data.deletedCount>0){
                     // alert("Delete Successful!")

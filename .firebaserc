@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "car-mechanic-36f2b"
-  }
+    "default": "car-mechanic-36f2b",
+    "build": "car-mechanic-36f2b"
+  },
+  "targets": {}
 }

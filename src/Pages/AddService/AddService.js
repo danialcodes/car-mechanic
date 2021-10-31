@@ -5,7 +5,7 @@ const axios = require('axios').default;
 const AddService = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        const insertUrl = "http://localhost:5000/services";
+        const insertUrl = "https://ghastly-ghost-15172.herokuapp.com/services";
         axios.post(insertUrl,data)
         .then(res=>console.log(res.data));
 

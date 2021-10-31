@@ -5,7 +5,7 @@ const Booking = () => {
     const {serviceId} = useParams();
     const [service,setService] = useState({});
     useEffect(()=>{
-        axios.get(`http://localhost:5000/services/${serviceId}`)
+        axios.get(`https://ghastly-ghost-15172.herokuapp.com/services/${serviceId}`)
         .then(res=>{
             setService(res.data);
         })
